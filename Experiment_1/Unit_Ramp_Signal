@@ -1,0 +1,25 @@
+#Unit_Ramp_Signal
+clc;
+clf;
+close all;
+clear all;
+n1=input('Starting point of the signal: ');
+n2=input('End point of the signal: ');
+amp_1 = zeros(1, n1+1);                     % Create an array of zeros of length n1+1 to represent the initial part of the signal
+for(i = 1:n2)                               % Loop through from 1 to n2 to generate the parabolic signal
+    amp_2(i) = (i^2)/2;                     % Calculate the amplitude of the parabolic signal using (i^2)/2 and store it in amp_2
+end
+amplitude = [amp_1, amp_2];                 % Concatenate amp_1 (zeros) and amp_2 (parabolic part) to form the complete signal
+
+amplitude=[amp_1,amp_2];
+title('Parabolic Signal');
+subplot(211);
+plot(sam_points,amplitude);
+grid on;
+xlabel('Samples');
+ylabel('Amplitude');
+subplot(212);
+stem(sam_points,amplitude);
+grid on;
+xlabel('Samples');
+ylabel('Amplitude');
