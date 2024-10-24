@@ -1,4 +1,4 @@
-### Experiment 6: Circular Convolution using Linear Convolution
+### Experiment 5: Circular Convolution using Linear Convolution
 
 
 **Circular convolution** and **linear convolution** are mathematical operations used in signal processing. While they have distinct definitions, they are closely related, particularly when the signals involved are appropriately zero-padded.
