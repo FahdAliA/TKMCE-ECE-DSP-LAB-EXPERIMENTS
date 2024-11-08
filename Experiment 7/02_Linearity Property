@@ -26,3 +26,29 @@ for (k=1:N)
     y(k)=y(k)+exp(-1i*2*pi*(k-1)*(n-1)/N)*x(n);
   end
 end
+
+
+%Output
+
+2. Linearity Property
+Enter the 1st sequence : [1 2 3 4]
+Enter the 2nd sequence : [2 3 4 5]
+Enter 1st scalar value a : 2
+Enter 2nd scalar value b : 3
+
+Y1 =
+
+  62.0000 + 0.0000i
+ -10.0000 -10.0000i
+ -10.0000 + 0.0000i
+ -10.0000 +10.0000i
+
+
+Y2 =
+
+  62.0000 + 0.0000i
+ -10.0000 -10.0000i
+ -10.0000 + 0.0000i
+ -10.0000 +10.0000i
+
+Linearity property of DFT is verified
